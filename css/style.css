@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 /*Layout*/
 * {box-sizing: border-box;}
@@ -8,6 +8,7 @@ body {font-family: 'Open Sans', sans-serif; margin: 0; background-color: #eeeeee
 
 h2 {margin-top: 50px; font-size: 1.7em;}
 h3 {font-size: 1.5em; margin-bottom: 0;}
+h4 {text-align: center; font-size: 2em; margin-top: 50px; margin-bottom: -10px; font-weight: 600; color: gray;}
 a {text-decoration: none;}
 
 .bannersmall {display: none;}
@@ -75,7 +76,7 @@ a {text-decoration: none;}
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     background-color: #dddddd;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 /*Center Images*/
@@ -144,7 +145,7 @@ a.btn.mv {
 a.btn.mv:hover {background-color: #008B8B}
 
 /*Footer*/
-footer {font-size: .8em;}
+footer {font-size: .8em; text-align: center; margin-bottom: 10px;}
 
 
 /*Responsive*/
@@ -156,7 +157,7 @@ footer {font-size: .8em;}
 
 @media screen and (max-width: 800px) {
     h1 {font-size: 1.7em; text-align: center;}
-    h2 {font-size: 1.5em;}
+    h2 {font-size: 1.5em; text-align: center;}
 
     .banner {display: none;}
     .bannersmall {display: block;}
@@ -166,6 +167,8 @@ footer {font-size: .8em;}
     .column.two-text {width: 100%; padding: 0;}
     .column.three {width: 100%; padding: 0;}
     .center.fifty {width: 100%;}
+
+    .accordion {font-size: 1em;}
 
     h3 {text-align: center; margin-top: 0;}
     a.btn {padding: 8px 12px; border-radius: 25px;}
