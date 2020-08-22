@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* Print CSS Document */
+
+@page {margin: .5in;}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { font-size: 1.4em; text-align: center;}
+h2 { font-size: 1.3em; text-align: center;}
+h3 { font-size: 1.2em; text-align: center;}
+h4 { font-size: 1.1em; }
+
+a { color: gray; text-decoration: none; }
+
+.topnav {display: none;}
+footer {padding-top: 20px; text-align: center;}
+footer h5 {display: none;}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {display: none;}
+
+
+/*Homepage*/
+.app_res::after {content: attr(RoughAnimator);}
+
+.app_res{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#iOS {display: none;}
+#Mac {display: none;}
+#Android {display: none;}
+#Windows {display: none;}
+
+#ios {width: 100px; height: 25px;}
+#mac {width: 100px; height: 25px;}
+#android {width: 100px; height: 25px;}
+#windows {width: 100px; height: 25px;}
+
+.purchase {
+    padding-top: 20px;
+}
+
+.links::after {content: 'iOS:https://apps.apple.com/us/app/roughanimator/id954718244 Android:https://play.google.com/store/apps/details?id=com.weirdhat.roughanimator'; margin: 10px 0 0px;}
+
+/*Features*/
+.features {padding: 0;}
+.features h1 {color: black;}
+.features h2 {color: black;}
+.page img {display: none;}
+
+.purchase img {width: 50px;}
+.column-40 img {width: 50px;}
+.column-60 img {display: none;}
+
+
+/*Support*/
+.tab button {display: none;}
+.tabcontent .contents ul li {margin: 0px;}
+.ic {width: 18px;}
+
+.print {display: none;}
+
+.tabcontent ul li {margin: 10px 0px;}
+.tabcontent ul ul li {margin: 0px;}
+.tabcontent ol li {margin: 10px 0px;}
+.tabcontent ol ul li {margin: 0px;}
+
+/*Table*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+/*Image Widths*/
+.image.forty {width: 20%;}
+.image.fifty {width: 25%;}
+.image.sixty {width: 30%;}
+
+.image.sixty.imgprint {width: 25%; margin-bottom: -36px;}
+
+/*Featured/Tutorials*/
+iframe {display: none;}
+
+h2::after {display: block; margin: 10px 0 0px; font-style: italic; font-weight: 500; font-size: 1em;}
+h3::after {display: block; margin: 10px 0 50px; font-style: italic; font-weight: 400; font-size: .9em;}
+
+.redowl::after {content:'https://www.youtube.com/channel/UCPn4T36Zk731JWkXl2bqbBQ';}
+.gal::after {content: 'https://www.youtube.com/channel/UCA1ZyvPnZ1D-3xlpCM6-CrQ';}
+.angela::after {content: 'https://www.youtube.com/channel/UC5DWoXM3uM5_WTiEEbQzU1g';}
+
+.ben::after {content: 'https://www.youtube.com/channel/UCjJk212xU15y_NPYKuCsKQA';}
+.patrick::after {content: 'https://www.youtube.com/channel/UCIl0Xzd2Ap0Ow1LgEyPQSgw';}
+
+.tutorial1::after {content:'https://www.youtube.com/embed/AEx2eGDKYCA';}
+.tutorial2::after {content:'https://www.youtube.com/embed/kYFDkBUANSE';}
+.tutorial3::after {content:'https://www.youtube.com/embed/oL2gmN9nmvY';}
+
+
+/*Contact*/
+textarea {width: 100%;}

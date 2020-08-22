@@ -1,0 +1,1093 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/icon.png">
+<title>User Guides | RoughAnimator</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h3 {text-align: left; margin-top: 30px; margin-bottom: -10px;}
+</style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><b>RoughAnimator</b></a>
+        <div class="dropdown">
+          <button class="dropbtn" style="cursor: pointer;">Support 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="user.html">User Guides</a>
+            <a href="import.html">Import Projects</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn" style="cursor: pointer;">Community 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="featured.html">Featured</a>
+            <a href="tutorials.html">Tutorials</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1>User Guides</h1>
+
+    <div class="tab">
+      
+      <h2>
+      <button class="tablinks" onclick="openPage(event, 'ios/android')" id="defaultOpen">iOS/Android</button>
+      <button class="tablinks" onclick="openPage(event, 'mac_g')">Mac OS</button>
+      <button class="tablinks" onclick="openPage(event, 'windows_g')">Windows</button>
+      </h2>
+
+      <div id="ios/android" class="tabcontent">
+        <h3>iOS/Android</h3>
+        <h3>Overview:</h3>
+
+        <p>Press "New project" and choose your desired resolution and framerate. The project will open.</p>
+
+        <p>In a new project, the timeline will be only one frame long to begin with. You will see a Background layer (this cannot be deleted) and a default "Layer 1" with one drawing, and above that the green playhead indicating the current frame. To the left are sliders to control the opacity of each layer, and buttons to change the layer order or delete a layer.</p>
+
+        <p>To extend the duration a drawing is seen when played back, drag the "Drawing duration" slider in the timeline panel; or drag the arrow on the right side of the currently selected drawing on the timeline.</p>
+
+        <p>Each drawing is represented by a blue button on the timeline. Press on any one to go to that drawing; or, drag the green playhead along the top bar of the timeline to scrub through the drawings; or, use the forward/back buttons <img alt="Previous" src="images/user/ic_previous.png" width="15px"><img alt="Next" src="images/user/ic_next.png" width="15px"> step back and forth; or, drag up/down from the <img alt="Frame Flip" src="images/user/ic_frameflip.png" width="6px"> button for quick flipping. By default, going forward from the end of the timeline will automatically add a new drawing and extend the timeline to fit it. You can also add drawings to the timeline manually by clicking "Add drawing" in the Tools panel.</p>
+
+        <p>You can press and hold on a drawing in the timeline to drag/drop it earlier or later, or to add a new drawing.</p>
+
+        <p>Draw in drawing canvas. Pinch to zoom/pan. For drawing you have available a Brush tool <img alt="Brush" src="images/user/ic_brush.png" class="ic">, an Eraser tool <img alt="Eraser" src="images/user/ic_eraser.png" class="ic">, a Fill tool <img alt="Bucket" src="images/user/ic_bucket.png" class="ic">, and a Lasso selection tool <img alt="Lasso" src="images/user/ic_lasso.png" class="ic">.</p>
+
+        <p>The Onion Skin feature lets you see previous and following drawings overlayed on the current frame. Toggle it on and off with the Onion skin button in the Tools panel, and adjust the range of drawings visible in the Tool Options panel.</p>
+
+        <p>Press the Play button in the Tools panel to play back a preview of your animation. In the <img alt="Hamburger Menu" src="images/user/ic_hamburger.png" class="ic"> menu you can export a Quicktime video, a PNG image sequence, or an animated GIF.</p>
+        
+        <h2><img alt="Panels" src="images/user/panels.png" class="image fifty" style="border: none;"></h2>
+
+        <ul>
+          <li><img alt="Fullscreen" src="images/user/ic_fullscreen.png" class="ic"> - Press to hide all button panels and expand drawing canvas to fullscreen.</li>
+          <li><strong>Drawing duration</strong> - How many frames the current drawing will remain on screen when played back.</li>
+            <ul>
+              <li><img alt="Independent" src="images/user/independent.gif" width="45px" style="border: none;"><strong>Independent</strong> - Duration slider affects only current layer.</li>
+              <li><img alt="Sync layers" src="images/user/sync_layers.gif" width="45px" style="border: none;"><strong>Sync layers</strong> - Duration slider affects all layers together. Deleting a drawing will expand the previous drawing's duration to keep overall timing the same.</li>
+              <li><img alt="Maintain overall duration" src="images/user/maintain_overall_duration.gif" width="45px" style="border: none;"><strong>Maintain overall duration</strong> - The next drawing's duration will get shorter as the current drawing's duration gets longer and vice versa, to keep overall timing the same. Deleting a drawing will expand the next drawing's duration to keep overall timing the same.</li>
+            </ul>
+          <li><strong>Drawing label</strong> - Give the current drawing a label, which will be displayed on its button in the timeline. (Useful for organization.)</li>
+          <li><strong>Delete drawing</strong> - Deletes the current drawing.</li>
+          <li><strong>Make cycle</strong> - Converts the current drawing into a loop of the previous X number of drawings on the timeline that you choose. Any changes to those drawings will be reflected automatically in the repeated cycle of them. The cycle will appear green on the timeline, or red if it cannot work (either you are trying to cycle more drawings than exist, or you are trying to cycle a cycle).</li>
+          <li><img alt="Move Back" src="images/user/ic_moveback.png" width="30px"> - Swaps the current drawing with the previous drawing on the timeline.</li>
+          <li><img alt="Move Forward" src="images/user/ic_moveforward.png" width="30px"> - Swaps the current drawing with the next drawing on the timeline.</li>
+          <li><strong>Edit multiple</strong> - Select multiple drawings in a range of frames on the timeline and edit them all at once.</li>
+          <li><strong>Playback range</strong> - Adjust these sliders to play only part of the animation when previewing. You can also choose when exporting to export only the playback range.</li>
+          <li><img alt="Hamburger Menu" src="images/user/ic_hamburger.png" class="ic"> - Opens a popup menu of actions that affect the whole project.</li>
+            <ul>
+              <li><strong>Close project</strong> - Closes the project and returns to the project selection screen.</li>
+              <li><strong>Import audio</strong> - Choose a WAV or MP3 file to import to your project. Once imported, going to a drawing will play back the section of the audio file at that point of the timeline, and playing back the animation will play it with the audio. A visual representation of the audio waveform will display on the timeline.</li>
+                <ul>
+                  <li><strong>Remove audio</strong> - Will appear in the menu if you have already imported an audio file. Pressing it will remove that audio file from your project.</li>
+                </ul>
+              <li><strong>Import image(s)</strong> - Choose an image file to paste into the current drawing. Will be scaled to fit the project's resolution. If you select multiple images, they will be imported as a sequence on a new layer.</li>
+              <li><strong>Import video</strong> - Choose a video file to import to your project as a new layer. Will be scaled to fit the project's resolution.</li>
+              <li><strong>Export video</strong> - Export Quicktime video, GIF, or PNG image sequence. PNG supports transparent background, the other formats do not.</li>
+              <li><strong>Change framerate</strong> - Change the playback frames per second of the project.</li>
+              <li><strong>Change background color</strong> - Change the background color of the project.</li>
+              <li><strong>Resize or crop/expand</strong> - Change the canvas size/resolution. This is not undoable. (Tip: the app will run smoother at lower resolutions, so you may want to do your rough animation at half size and then scale up before doing cleanup and color.)</li>
+            </ul>
+          <li><img alt="App Preferences" src="images/user/ic_gear.png" class="ic"> - App preferences.</li>
+            <ul>
+              <li><strong>Preview resolution, current layer</strong> - Set to lower display quality if drawing lags.</li>
+              <li><strong>Preview resolution, other layers</strong> - Set to lower display quality if scrubbing/playback lags.</li>
+              <li><strong>Forward/back buttons: step by frame</strong> - Forward/back buttons step one frame at a time, instead of to next keyframe.</li>
+              <li><strong>Flip wheel: step by keyframe</strong> - Flip wheel steps by keyframe, instead of by frame.</li>
+              <li><strong>Allow forward button to add drawing</strong> - If enabled, pressing forward button while at the end of the timeline will add a new drawing after.</li>
+              <li><strong>Volume buttons function</strong> - Set volume buttons to undo/redo, flip back/forward, change volume, or do nothing.</li>
+              <li><strong>Two finger tap to undo, three finger tap to redo</strong> - (iOS only)</li>
+              <li><strong>Onion skin opacity</strong> - Adjust the opacity level that onion skinned drawings will display at.</li>
+              <li><strong>Onion skin tint previous drawings</strong> - Tint onion skinned drawings with different colors to more easily differentiate between the previous and following drawings.</li>
+              <li><strong>Onion skin tint following drawings</strong> - Tint onion skinned drawings with different colors to more easily differentiate between the previous and following drawings.</li>
+              <li><strong>Pen only drawing mode</strong> - For Galaxy Note S-Pen, Apple Pencil, Adonit or Wacom Bluetooth styluses - ignore finger touch on canvas, only accept pen input.</li>
+              <li><strong>Third-party Bluetooth stylus</strong> - (iOS only) Adonit or Wacom Bluetooth styluses. With this option on, a pen icon <img alt="Stylus" src="images/user/ic_stylus.png" width="18px"> will appear in the corner of the drawing canvas - press it to pair the app with your stylus and change settings for it. A zoom icon <img alt="Zoom" src="images/user/ic_zoom.png" width="18px"> will also appear, press it to disable pinch zoom/pan gestures if they are interfering with palm rejection.</li>
+              <li><strong>Pen calibration</strong> - (Android only) Offset drawing on screen from the tip of the pen.</li>
+              <li><strong>Show cursor when hovering</strong> - (Android only) For devices with a pen - shows cursor with brush size, at correct offset as set in pen calibration.</li>
+              <li><strong>Minimum brush size pressure</strong> - For pressure sensitive devices - brush size corresponding to the lowest level of pressure.</li>
+              <li><strong>Minimum brush opacity pressure</strong> - For pressure sensitive devices - brush opacity corresponding to the lowest level of pressure.</li>
+              <li><strong>Left-handed interface</strong> - Puts drawing canvas on left of screen and buttons on right.</li>
+              <li><strong>Interface scale</strong> - Adjust if interface seems to be displaying wrongly for your screen size.</li>
+              <li><strong>Timeline panel maximum height</strong> - Adjust how many layers the timeline will expand to show before you have to scroll up/down.</li>
+              <li><strong>Show playback range sliders</strong> - The playback range start/end sliders, you can hide them if your screen size is limited.</li>
+              <li><strong>Allow pinch rotation of canvas</strong></li>
+              <li><strong>Snap zoom and rotation</strong></li>
+            </ul>
+          <li><strong>Modify layers</strong></li>
+            <ul>
+              <li><strong>Add empty layer</strong> - Adds a layer with one empty drawing.</li>
+              <li><strong>Add, copy timing to blank drawings</strong> - Adds a layer with the same number of drawings and same duration as the current layer, but without the content of the drawings. (Useful for coloring: you can place this new layer under the line art layer and do your coloring on it, without affecting the line art itself.)</li>
+              <li><strong>Add, copy drawings</strong> - Makes a complete duplicate of the current layer, including all drawing content.</li>
+              <li><strong>Merge down</strong> - Merges the current layer with the layer below it.</li>
+              <li><strong>Delete layer</strong> - Deletes the current layer.</li>
+            </ul>
+          <li><strong>Add drawing</strong> - Add a drawing to the timeline.</li>
+            <ul>
+              <li><strong>Add after</strong> - Adds a blank drawing after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+              <li><strong>Add split halfway</strong> - Adds a blank inbetween drawing, halfway from the current drawing to the next drawing on the timeline, shortening the current drawing's duration by half to keep overall timing the same.</li>
+              <li><strong>Add split at playhead</strong> - Adds a blank inbetween drawing at the current frame on the timeline, shortening the current drawing's duration to keep overall timing the same.</li>
+              <li><strong>Duplicate after</strong> - Adds a copy of the current drawing, after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+              <li><strong>Duplicate split halfway</strong> - Splits the current drawing halfway along its duration, into two identical drawings of half the length each.</li>
+              <li><strong>Duplicate split at playhead</strong> - Splits the current drawing at the current frame on the timeline, into two identical drawings.</li>
+            </ul>
+          <li><strong>Timeline</strong> - Hides/shows the timeline panel.</li>
+          <li><strong>Tool options</strong> - Hide/show the tool options panel.</li>
+            <ul>
+              <li><img alt="Color" src="images/user/color.png" class="ic"> - The brush color, press to open a color picker dialog.</li>
+              <li><img alt="Color Picker" src="images/user/ic_colorpicker.png" class="ic"> - Eyedropper tool, press this button and then press anywhere on the drawing canvas to pick the color from that point of the drawing.</li>
+              <li><img alt="Brush 1" src="images/user/brush1.png" class="ic"> <img alt="Brush 2" src="images/user/brush2.png" class="ic"> <img alt="Brush 3" src="images/user/brush3.png" class="ic"> - Choose the brush shape</li>
+                <ul>
+                  <li><strong>Add brush shape</strong> - Import an image as a brush shape. Brush shape images must be PNG format with a transparent background.</li>
+                </ul>
+              <li><strong>Randomize rotation</strong> - Randomize the rotation of the brush image.</li>
+              <li><strong>Pressure sensitivity</strong> - Use stylus pressure (if available) to affect brush size/opacity.</li>
+            </ul>
+          <li><img alt="Brush" src="images/user/ic_brush.png" class="ic"> - Draw lines with the brush tool. Press the brush button twice to save/load brush presets.</li>
+            <ul>
+              <li><strong>Brush size</strong> - The width of the brush.</li>
+              <li><strong>Opacity</strong> - Opacity of the brush.</li>
+              <li><strong>Spacing</strong> - The distance between marks in a brush stroke.</li>
+              <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+              <li><strong>Draws in front</strong> - New brush strokes will cover earlier drawing on same layer.</li>
+              <li><strong>Draws behind</strong> - New brush strokes will appear behind earlier drawing on same layer.</li>
+              <li><strong>Draws inside</strong> - Preserves transparency (good for shading).</li>
+            </ul>
+          <li><img alt="Eraser" src="images/user/ic_eraser.png" class="ic"> - Erase with the eraser tool. Press the eraser button twice to save/load eraser brush presets.</li>
+            <ul>
+              <li><strong>Erase size</strong> - The width of the eraser.</li>
+              <li><strong>Opacity</strong> - Opacity of the eraser.</li>
+              <li><strong>Spacing</strong> - The distance between marks in an eraser stroke.</li>
+              <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+            </ul>
+          <li><img alt="Bucket" src="images/user/ic_bucket.png" class="ic"> - Paint bucket tool fills an area inside lines with color.</li>
+            <ul>
+              <li><strong>Fill expand</strong> - Expands the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+              <li><strong>Fill blur</strong> - Blurs the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+              <li><strong>Tolerance</strong> - The range of difference in color from the sampled point to include in the area to be filled.</li>
+              <li><strong>Sample this layer</strong> - Fill inside lines drawn on current layer.</li>
+              <li><strong>Sample this & above</strong> - Fill inside lines drawn on this layer and all layers above it.</li>
+              <li><strong>Sample all layers</strong> - Fill inside lines drawn on all layers.</li>
+              <li><strong>Fills in front</strong> - New fills will cover earlier drawing on same layer.</li>
+              <li><strong>Fills in behind</strong> - New fills will appear behind earlier drawing on same layer.</li>
+              <li><strong>Fills inside</strong> - Preserves transparency (good for changing color of something you've already drawn).</li>
+            </ul>
+          <li><img alt="Lasso" src="images/user/ic_lasso.png" class="ic"> - Lasso select/move tool.</li>
+            <ul>
+              <li><strong>Select all</strong> - Selects the entire drawing.</li>
+              <li><strong>Select none</strong> - De-selects anything selected.</li>
+              <li><strong>Delete</strong> - Delete the current selection.</li>
+              <li><strong>X translate</strong> - Move the current selection horizontally.</li>
+              <li><strong>Y translate</strong> - Move the current selection vertically.</li>
+              <li><strong>Rotate</strong> - Rotate the current selection.</li>
+              <li><strong>Scale</strong> - Scale the current selection.</li>
+              <li><strong>Flip horizontal</strong> - Flip the current selection horizontally.</li>
+              <li><strong>Flip vertical</strong> - Flip the current selection vertically.</li>
+              <li><strong>Copy</strong> - Copy the current selection.</li>
+              <li><strong>Paste</strong> - Paste the last copied selection.</li>
+            </ul>
+          <li><img alt="Undo" src="images/user/ic_action_undo.png" class="ic"> - Undo the last action.</li>
+          <li><img alt="Redo" src="images/user/ic_action_redo.png" class="ic"> - Redo undone actions.</li>
+          <li><img alt="Play" src="images/user/ic_action_play.png" class="ic"> - Play back the animation.</li>
+          <li><img alt="Previous" src="images/user/ic_previous.png" class="ic"> - Go to the previous drawing on the timeline.</li>
+          <li><img alt="Frame Flip" src="images/user/ic_frameflip.png" width="9px"> - Drag up/down to scrub along the timeline.</li>
+          <li><img alt="Next" src="images/user/ic_next.png" class="ic"> - Go to the next drawing on the timeline.</li>
+          <li><strong>Onion skin</strong> - Onion skinning, shows you previous/next drawings overlayed on the current drawing.</li>
+            <ul>
+              <li><strong>Onion skin range</strong> - Use these sliders to control how many drawings before/after the current drawing to show when onion skinning is turned on.</li>
+            </ul>
+        </ul>
+      
+      </div>
+
+      <div id="mac_g" class="tabcontent">
+
+        <h3>Mac OS Contents:</h3>
+        <div class="contents">
+          <ul>
+            <li><a title="Overview" href="#overview">Overview</a></li>
+            <li><a title="Keyboard Shortcuts" href="#keyboard">Keyboard Shortcuts</a></li>
+            <li><a title="Menus" href="#menus">Menus</a></li>
+            <li><a title="Tools" href="#tools">Tools</a></li>
+            <li><a title="Timeline" href="#timeline">Timeline</a></li>
+            <li><a title="Preferences" href="#preferences">Preferences</a></li>
+          </ul>
+        </div>
+
+        <br class="print">
+
+        <h3><a name="overview">Overview:</a></h3>
+          <p>Create a new project from the File menu and choose your desired resolution and framerate. A drawing canvas window will open. In a new project, the timeline will be only one frame long to begin with. You will see a Background layer (this cannot be deleted) and a default "Layer 1" with one drawing, and above that the playhead indicating the current frame. To the left are sliders to control the opacity of each layer, and buttons to change the layer order or delete a layer.</p>
+          <p>To extend the duration a drawing is seen when played back, drag the "Drawing duration" slider; or drag the edge between drawings on the timeline; or press F5 or the + key to increase duration and Shift F5 or the - key to decrease.</p>
+          <p>Each drawing is represented by a blue button on the timeline. Click on any one to go to that drawing; or, drag along the top bar of the timeline to scrub through the drawings; or, use the arrow keys to step back and forth. By default, going forward from the end of the timeline will automatically add a new drawing and extend the timeline to fit it. You can also add drawings to the timeline manually by clicking "Add drawing" in the timeline panel, or with the following keyboard shortcuts:</p>
+
+          <table class="tbcenter">
+            <tr>
+              <th>F6</th>
+              <th>Duplicate drawing at playhead</th>
+            </tr>
+            <tr>
+              <th>Shift F6</th>
+              <th>Duplicate drawing after</th>
+            </tr>
+            <tr>
+              <th>Command F6</th>
+              <th>Duplicate drawing halfway</th>
+            </tr>
+            <tr>
+              <th>F7</th>
+              <th>Add drawing at playhead</th>
+            </tr>
+            <tr>
+              <th>Shift F7</th>
+              <th>Add drawing after</th>
+            </tr>
+            <tr>
+              <th>Command F7</th>
+              <th>Add drawing halfway</th>
+            </tr>
+          </table>
+
+          <p>You can press and hold on a drawing in the timeline to drag/drop it earlier or later, or to add a new drawing.</p>
+          <p>For drawing you have available a Brush tool (B), an Eraser tool (E), a Fill tool (F), and a Lasso selection tool (L), as well as a Zoom tool (Z) to zoom in by clicking on the canvas (or out when holding the Option key), and a Pan tool (H) to move the canvas around the window (the Pan tool can also be activated temporarily by holding down the Spacebar).</p>
+          <p>The Onion Skin feature lets you see previous and following drawings overlayed on the current frame. Toggle it on and off with the Onion skin button in the Tools panel (or the O key), and adjust the range of drawings visible in the Tool Options panel.</p>
+          <p>Press the Play button in the Tools panel (or the Enter key) to play back a preview of your animation. In the File menu you can export a Quicktime video, a PNG image sequence, or an animated GIF.</p>
+
+        <br class="print">
+
+        <h3><a name="keyboard">Keyboard shortcuts:</a></h3>
+        <br>
+        <table class="tbcenter">
+          <tr>
+            <th>B</th>
+            <th>Brush tool</th>
+          </tr>
+
+          <tr>
+            <th>E</th>
+            <th>Eraser tool</th>
+          </tr>
+
+          <tr>
+            <th>F</th>
+            <th>Fill tool</th>
+          </tr>
+
+          <tr>
+            <th>L</th>
+            <th>Lasso tool</th>
+          </tr>
+
+          <tr>
+            <th>Z</th>
+            <th>Zoom tool (hold Option key to zoom out)</th>
+          </tr>
+
+          <tr>
+            <th>Command +</th>
+            <th>Zoom in</th>
+          </tr>
+
+          <tr>
+            <th>Command -</th>
+            <th>Zoom out</th>
+          </tr>
+
+          <tr>
+            <th>H</th>
+            <th>Pan tool</th>
+          </tr>
+
+          <tr>
+            <th>Spacebar</th>
+            <th>Pan tool while held down</th>
+          </tr>
+
+          <tr>
+            <th>Command Z</th>
+            <th>Undo</th>
+          </tr>
+
+          <tr>
+            <th>Command Shift Z</th>
+            <th>Redo</th>
+          </tr>
+
+          <tr>
+            <th>Enter</th>
+            <th>Play/Stop</th>
+          </tr>
+
+          <tr>
+            <th>O</th>
+            <th>Toggle onion skin</th>
+          </tr>
+
+          <tr>
+            <th>I</th>
+            <th>Color eyedropper</th>
+          </tr>
+
+          <tr>
+            <th><</th>
+            <th>Previous frame</th>
+          </tr>
+
+          <tr>
+            <th>></th>
+            <th>Next frame</th>
+          </tr>
+
+          <tr>
+            <th>Left Arrow</th>
+            <th>Previous drawing</th>
+          </tr>
+
+          <tr>
+            <th>Right Arrow</th>
+            <th>Next drawing</th>
+          </tr>
+
+          <tr>
+            <th>Command Left Arrow</th>
+            <th>Move drawing back</th>
+          </tr>
+
+          <tr>
+            <th>Command Right Arrow</th>
+            <th>Move drawing forward</th>
+          </tr>
+
+          <tr>
+            <th>F5 or +</th>
+            <th>Increase drawing duration</th>
+          </tr>
+
+          <tr>
+            <th>Shift F5 or -</th>
+            <th>Decrease drawing duration</th>
+          </tr>
+
+          <tr>
+            <th>F6</th>
+            <th>Duplicate drawing at playhead</th>
+          </tr>
+
+          <tr>
+            <th>Shift F6</th>
+            <th>Duplicate drawing after</th>
+          </tr>
+
+          <tr>
+            <th>Command F6</th>
+            <th>Duplicate drawing halfway</th>
+          </tr>
+
+          <tr>
+            <th>F7</th>
+            <th>Add drawing at playhead</th>
+          </tr>
+
+          <tr>
+            <th>Shift F7</th>
+            <th>Add drawing after</th>
+          </tr>
+
+          <tr>
+            <th>Command F7</th>
+            <th>Add drawing halfway</th>
+          </tr>
+
+          <tr>
+            <th>Shift Delete</th>
+            <th>Delete drawing</th>
+          </tr>
+
+          <tr>
+            <th>[</th>
+            <th>Decrease brush size</th>
+          </tr>
+
+          <tr>
+            <th>]</th>
+            <th>Increase brush size</th>
+          </tr>
+
+          <tr>
+            <th>Command C</th>
+            <th>Copy selection</th>
+          </tr>
+
+          <tr>
+            <th>Command V</th>
+            <th>Paste selection</th>
+          </tr>
+
+          <tr>
+            <th>Command X</th>
+            <th>Cut selection</th>
+          </tr>
+
+          <tr>
+            <th>Delete</th>
+            <th>Delete selection</th>
+          </tr>
+
+          <tr>
+            <th>Command A</th>
+            <th>Select all</th>
+          </tr>
+
+          <tr>
+            <th>Command Shift A</th>
+            <th>Select none</th>
+          </tr>
+
+          <tr>
+            <th>Arrow keys</th>
+            <th>Nudge selection by 1px</th>
+          </tr>
+
+          <tr>
+            <th>Shift Arrow keys</th>
+            <th>Nudge selection by 10px</th>
+          </tr>
+
+        </table>
+
+        <br>
+
+        <h3><a name="menus">Menus:</a></h3>
+          <ul>
+            <li><strong>RoughAnimator</strong></li>
+              <ul>
+                <li><strong>About RoughAnimator</strong> - Information about the program.</li>
+                <li><strong>Registration</strong> - Input your license key here after purchasing to activate the full version.</li>
+              </ul>
+            <li><strong>File</strong></li>
+              <ul>
+                <li><strong>New</strong> - Create a new untitled project with the resolution and framerate you specify.</li>
+                <li><strong>Open</strong> - Open a project.</li>
+                <li><strong>Close</strong> - Close the current project.</li>
+                <li><strong>Save</strong> - Save the current project.</li>
+                <li><strong>Save As...</strong> - Save the current project to a different filename.</li>
+                <li><strong>Revert to Saved</strong> - Discard all changes made to the project since you last saved.</li>
+                <br>
+                <li><strong>Import audio</strong> - Choose a WAV or MP3 file to import to your project. Once imported, going to a drawing will play back the section of the audio file at that point of the timeline, and playing back the animation will play it with the audio. A visual representation of the audio waveform will display on the timeline.</li>
+                  <ul>
+                    <li><strong>Remove audio</strong> - Will appear in the menu if you have already imported an audio file. Pressing it will remove that audio file from your project.</li>
+                  </ul>
+                <li><strong>Import image(s)</strong> - Choose an image file to paste into the current drawing. Will be scaled to fit the project's resolution. If you select multiple images, they will be imported as a sequence on a new layer.</li>
+                <li><strong>Import video</strong> - Choose a video file to import to your project as a new layer. Will be scaled to fit the project's resolution.</li>
+                <br>
+                <li><strong>Export Quicktime video</strong> - Export a Quicktime video file of your project. Includes audio if you have imported an audio file.</li>
+                <li><strong>Export GIF</strong> - Export a GIF video of your project.</li>
+                <li><strong>Export PNG sequence</strong> - Export a sequence of PNG images, one for each frame of your project. # signs in the filename you choose will be replaced by the frame number. (The number of # signs corresponds to the number of digits with leading zeroes, i.e. "####" will turn into "0001" for frame 1.) Choose whether to export images with a transparent alpha channel or with the background color of the project.</li>
+                <br>
+                <li><strong>Change framerate</strong> - Change the playback frames per second of the project.</li>
+                <li><strong>Resize or crop/expand</strong> - Change the canvas size/resolution. This is not undoable. (Tip: the app will run smoother at lower resolutions, so you may want to do your rough animation at half size and then scale up before doing cleanup and color.)</li>
+              </ul>
+            <li><strong>Edit</strong></li>
+              <ul>
+                <li><strong>Undo</strong> - Undo the last action.</li>
+                <li><strong>Redo</strong> - Redo undone actions.</li>
+                <li><strong>Cut</strong> - Copy and delete the current selection.</li>
+                <li><strong>Copy</strong> - Copy the current selection.</li>
+                <li><strong>Paste</strong> - Paste the last copied selection.</li>
+                <li><strong>Delete</strong> - Delete the current selection.</li>
+                <li><strong>Select all</strong> - Selects the entire drawing.</li>
+                <li><strong>Select none</strong> - De-selects anything selected.</li>
+              </ul>
+            <li><strong>Window</strong></li>
+              <ul>
+                <li>Hide/show panels:</li>
+                  <ul>
+                    <li>Tools</li>
+                    <li>Tool options</li>
+                    <li>Timeline</li>
+                    <li>Preferences</li>
+                    <li>Color palette</li>
+                  </ul>
+                <li>Switch between open projects</li>
+              </ul>
+          </ul>        
+
+        <br class="print">
+
+        <h3><a name="tools">Tools:</a></h3>
+          <ul>
+            <li><img alt="Brush" src="images/user/ic_brush.png" class="ic"> - Draw lines with the brush tool. Press the brush button twice to save/load brush presets.</li>
+              <ul>
+                <li><img alt="Brush 1" src="images/user/brush1.png" class="ic"> <img alt="Brush 2" src="images/user/brush2.png" class="ic"> <img alt="Brush 3" src="images/user/brush3.png" class="ic"> - Choose the brush shape.</li>
+                  <ul>
+                    <li><strong>Add brush shape</strong> - Import an image as a brush shape. Brush shape images must be PNG format with a transparent background.</li>
+                  </ul>
+                <li><strong>Randomize rotation</strong> - Randomize the rotation of the brush image.</li>
+                <li><strong>Pressure sensitivity</strong> - Use stylus pressure (if available) to affect brush size/opacity.</li>
+                <li><strong>Brush size</strong> - The width of the brush.</li>
+                <li><strong>Opacity</strong> - Opacity of the brush.</li>
+                <li><strong>Spacing</strong> - The distance between marks in a brush stroke.</li>
+                <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+                <li><strong>Draws in front</strong> - New brush strokes will cover earlier drawing on same layer.</li>
+                <li><strong>Draws behind</strong> - New brush strokes will appear behind earlier drawing on same layer.</li>
+                <li><strong>Draws inside</strong> - Preserves transparency (good for shading).</li>
+              </ul>
+            <li><img alt="Eraser" src="images/user/ic_eraser.png" class="ic"> - Erase with the eraser tool. Press the eraser button twice to save/load eraser brush presets.</li>
+              <ul>
+                <li><strong>Erase size</strong> - The width of the eraser.</li>
+                <li><strong>Opacity</strong> - Opacity of the eraser.</li>
+                <li><strong>Spacing</strong> - The distance between marks in an eraser stroke.</li>
+                <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+              </ul>
+            <li><img alt="Bucket" src="images/user/ic_bucket.png" class="ic"> - Paint bucket tool fills an area inside lines with color.</li>
+              <ul>
+                <li><strong>Fill expand</strong> - Expands the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+                <li><strong>Fill blur</strong> - Blurs the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+                <li><strong>Tolerance</strong> - The range of difference in color from the sampled point to include in the area to be filled.</li>
+                <li><strong>Sample this layer</strong> - Fill inside lines drawn on current layer.</li>
+                <li><strong>Sample this & above</strong> - Fill inside lines drawn on this layer and all layers above it.</li>
+                <li><strong>Sample all layers</strong> - Fill inside lines drawn on all layers.</li>
+                <li><strong>Fill front</strong> - New fills will cover earlier drawing on same layer.</li>
+                <li><strong>Fill behind</strong> - New fills will appear behind earlier drawing on same layer.</li>
+              </ul>
+            <li><img alt="Lasso" src="images/user/ic_lasso.png" class="ic"> - Lasso select/move tool.</li>
+              <ul>
+                <li><strong>Select all</strong> - Selects the entire drawing.</li>
+                <li><strong>Select none</strong> - De-selects anything selected.</li>
+                <li><strong>Delete</strong> - Delete the current selection.</li>
+                <li><strong>X translate</strong> - Move the current selection horizontally.</li>
+                <li><strong>Y translate</strong> - Move the current selection vertically.</li>
+                <li><strong>Rotate</strong> - Rotate the current selection.</li>
+                <li><strong>Scale</strong> - Scale the current selection.</li>
+                <li><strong>Flip horizontal</strong> - Flip the current selection horizontally.</li>
+                <li><strong>Flip vertical</strong> - Flip the current selection vertically.</li>
+                <li><strong>Copy</strong> - Copy the current selection.</li>
+                <li><strong>Paste</strong> - Paste the last copied selection.</li>
+              </ul>
+            <li><img alt="Zoom" src="images/user/ic_zoom.png" class="ic"> - Zoom tool. Click in canvas to zoom in, hold Option key and click to zoom out.</li>
+            <li><img alt="Hand" src="images/user/ic_hand.png" class="ic"> - Pan tool. Click and drag in canvas to pan around the canvas.</li>
+            <li><img alt="Undo" src="images/user/ic_action_undo.png" class="ic"> - Undo the last action.</li>
+            <li><img alt="Redo" src="images/user/ic_action_redo.png" class="ic"> - Redo undone actions.</li>
+            <li><img alt="Play" src="images/user/ic_action_play.png" class="ic"> - Play back the animation.</li>
+            <li><img alt="Previous" src="images/user/ic_previous.png" class="ic"> - Go to the previous drawing on the timeline.</li>
+            <li><img alt="Frame Flip" src="images/user/ic_frameflip.png" width="9px"> - Drag up/down to scrub along the timeline.</li>
+            <li><img alt="Next" src="images/user/ic_next.png" class="ic"> - Go to the next drawing on the timeline.</li>
+            <li><strong>Onion skin</strong> - Onion skinning, shows you previous/next drawings overlayed on the current drawing.</li>
+              <ul>
+                <li><strong>Onion skin range</strong> - Use these sliders to control how many drawings before/after the current drawing to show when onion skinning is turned on.</li>
+              </ul>
+          </ul>
+
+        <br class="print">
+
+        <h3><a name="timeline">Timeline:</a></h3>
+        <p>Each drawing is represented by a blue button on the timeline. Click any one to go to that drawing - or, drag along the top bar of the timeline to scrub through the drawings.</p>
+          <ul>
+            <li><strong>Modify layers</strong></li>
+              <ul>
+                <li><strong>Add empty layer</strong> - Adds a layer with one empty drawing.</li>
+                <li><strong>Add, copy timing to blank drawings</strong> - Adds a layer with the same number of drawings and same duration as the current layer, but without the content of the drawings. (Useful for coloring: you can place this new layer under the line art layer and do your coloring on it, without affecting the line art itself.)</li>
+                <li><strong>Add, copy drawings</strong> - Makes a complete duplicate of the current layer, including all drawing content.</li>
+                <li><strong>Merge down</strong> - Merges the current layer with the layer below it.</li>
+                <li><strong>Delete layer</strong> - Deletes the current layer.</li>
+              </ul>
+            <li><strong>Layer options</strong> - Hides/shows options for each layer on the timeline panel.</li>
+              <ul>
+                <li><strong>Opacity slider</strong> - Control the opacity of this layer.</li>
+                <li><strong>Up/Down</strong> - Change layer order.</li>
+                <li><strong>Delete</strong> - Delete this layer.</li>
+              </ul>
+            <li><strong>Layer names</strong> - Hides/shows layer names. Click a name to edit it.</li>
+            <br>
+            <li><strong>Drawing duration</strong> - How many frames the current drawing will remain on screen when played back.</li>
+              <ul>
+                <li><img alt="Independent" src="images/user/independent.gif" width="45px" style="border: none;"> <strong>Independent</strong> - Duration slider affects only current layer.</li>
+                <li><img alt="Sync layers" src="images/user/sync_layers.gif" width="45px" style="border: none;"> <strong>Sync layers</strong> - Duration slider affects all layers together. Deleting a drawing will expand the previous drawing's duration to keep overall timing the same.</li>
+                <li><img alt="Maintain overall duration" src="images/user/maintain_overall_duration.gif" width="45px" style="border: none;"> <strong>Maintain overall duration</strong> - The next drawing's duration will get shorter as the current drawing's duration gets longer and vice versa, to keep overall timing the same. Deleting a drawing will expand the next drawing's duration to keep overall timing the same.</li>
+              </ul>
+            <li><strong>Drawing label</strong> - Give the current drawing a label, which will be displayed on its button in the timeline. (Useful for organization.)</li>
+            <li><strong>Add drawing</strong> - Add a drawing to the timeline.</li>
+              <ul>
+                <li><strong>Add after</strong> - Adds a blank drawing after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+                <li><strong>Add split halfway</strong> - Adds a blank inbetween drawing, halfway from the current drawing to the next drawing on the timeline, shortening the current drawing's duration by half to keep overall timing the same.</li>
+                <li><strong>Add split at playhead</strong> - Adds a blank inbetween drawing at the current frame on the timeline, shortening the current drawing's duration to keep overall timing the same.</li>
+                <li><strong>Duplicate after</strong> - Adds a copy of the current drawing, after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+                <li><strong>Duplicate split halfway</strong> - Splits the current drawing halfway along its duration, into two identical drawings of half the length each.</li>
+                <li><strong>Duplicate split at playhead</strong> - Splits the current drawing at the current frame on the timeline, into two identical drawings.</li>
+              </ul>
+            <li><strong>Delete drawing</strong> - Deletes the current drawing.</li>
+            <li><strong>Make cycle</strong> - Converts the current drawing into a loop of the previous X number of drawings on the timeline that you choose. Any changes to those drawings will be reflected automatically in the repeated cycle of them. The cycle will appear green on the timeline, or red if it cannot work (either you are trying to cycle more drawings than exist, or you are trying to cycle a cycle).</li>
+            <li><img alt="Move Back" src="images/user/ic_moveback.png" width="30px"> - Swaps the current drawing with the previous drawing on the timeline.</li>
+            <li><img alt="Move Forward" src="images/user/ic_moveforward.png" width="30px"> - Swaps the current drawing with the next drawing on the timeline.</li>
+            <li><strong>Playback range</strong> - Adjust these sliders to play only part of the animation when previewing. You can also choose when exporting to export only the playback range.</li>
+            <li><strong>Edit multiple</strong> - Select multiple drawings in a range of frames on the timeline and edit them all at once.</li>
+          </ul>
+        
+        <br class="print">
+
+        <h3><a name="preferences">Preferences:</a></h3>
+          <ul>
+            <li><strong>Timeline horizontal zoom</strong> - Adjust how wide each frame will appear on the timeline.</li>
+            <li><strong>Allow forward button to add drawing</strong> - If enabled, pressing forward button while at the end of the timeline will add a new drawing after.</li>
+            <li><strong>Onion skin opacity</strong> - Adjust the opacity level that onion skinned drawings will display at.</li>
+            <li><strong>Onion skin tint</strong> - Tint onion skinned drawings with different colors to more easily differentiate between the previous and following drawings.</li>
+            <li><strong>Preview resolution, current layer</strong> - Set to lower display quality if drawing lags.</li>
+            <li><strong>Preview resolution, other layers</strong> - Set to lower display quality if scrubbing/playback lags.</li>
+          </ul>
+
+      </div>
+
+      <div id="windows_g" class="tabcontent">
+
+        <h3>Windows Contents:</h3>
+        <div class="contents">
+          <ul>
+            <li><a title="Overview" href="#overview2">Overview</a></li>
+            <li><a title="Keyboard Shortcuts" href="#keyboard2">Keyboard Shortcuts</a></li>
+            <li><a title="Menus" href="#menus2">Menus</a></li>
+            <li><a title="Tools" href="#tools2">Tools</a></li>
+            <li><a title="Timeline" href="#timeline2">Timeline</a></li>
+            <li><a title="Preferences" href="#preferences2">Preferences</a></li>
+          </ul>
+        </div>
+
+        <br class="print">
+
+        <h3><a name="overview2">Overview:</a></h3>
+        <p>Create a new project from the File menu or by pressing the "New project" button, and choose your desired resolution and framerate. A drawing canvas window will open. In a new project, the timeline will be only one frame long to begin with. You will see a Background layer (this cannot be deleted) and a default "Layer 1" with one drawing, and above that the playhead indicating the current frame. To the left are sliders to control the opacity of each layer, and buttons to change the layer order or delete a layer.</p>
+        <p>To extend the duration a drawing is seen when played back, drag the "Drawing duration" slider; or drag the edge between drawings on the timeline; or press F5 or the + key to increase duration and Shift F5 or the - key to decrease.</p>
+        <p>Each drawing is represented by a blue button on the timeline. Click on any one to go to that drawing; or, drag along the top bar of the timeline to scrub through the drawings; or, use the arrow keys to step back and forth; or, drag up/down from the  button in the Tools panel for quick flipping. By default, going forward from the end of the timeline will automatically add a new drawing and extend the timeline to fit it. You can also add drawings to the timeline manually by clicking "Add drawing" in the tool panel, or with the following keyboard shortcuts:</p>
+
+        <table class="tbcenter">
+          <tr>
+            <th>F6</th>
+            <th>Duplicate drawing at playhead</th>
+          </tr>
+          <tr>
+            <th>Shift F6</th>
+            <th>Duplicate drawing after</th>
+          </tr>
+          <tr>
+            <th>Control F6</th>
+            <th>Duplicate drawing halfway</th>
+          </tr>
+          <tr>
+            <th>F7</th>
+            <th>Add drawing at playhead</th>
+          </tr>
+          <tr>
+            <th>Shift F7</th>
+            <th>Add drawing after</th>
+          </tr>
+          <tr>
+            <th>Control F7</th>
+            <th>Add drawing halfway</th>
+          </tr>
+        </table>
+
+        <p>You can press and hold on a drawing in the timeline to drag/drop it earlier or later, or to add a new drawing.</p>
+        <p>For drawing you have available a Brush tool (B), an Eraser tool (E), a Fill tool (F), and a Lasso selection tool (L), as well as a Zoom tool (Z) to zoom in by clicking on the canvas (or out when holding the Option key), and a Pan tool (H) to move the canvas around the window (the Pan tool can also be activated temporarily by holding down the Spacebar). If you're using a tablet with a touch screen, you can use two fingers to pan/zoom.</p>
+        <p>The Onion Skin feature lets you see previous and following drawings overlayed on the current frame. Toggle it on and off with the Onion skin button in the Tools panel (or the O key), and adjust the range of drawings visible in the Tool Options panel.</p>
+        <p>Press the Play button in the Tools panel (or the Enter key) to play back a preview of your animation. In the File menu you can export an MP4 video, a PNG image sequence, or an animated GIF.</p>
+
+        <br class="print">
+
+        <h3><a name="keyboard2">Keyboard shortcuts:</a></h3>
+        <br>
+        <table class="tbcenter">
+          <tr>
+            <th>B</th>
+            <th>Brush tool</th>
+          </tr>
+
+          <tr>
+            <th>E</th>
+            <th>Eraser tool</th>
+          </tr>
+
+          <tr>
+            <th>F</th>
+            <th>Fill tool</th>
+          </tr>
+
+          <tr>
+            <th>L</th>
+            <th>Lasso tool</th>
+          </tr>
+
+          <tr>
+            <th>Z</th>
+            <th>Zoom tool (hold Option key to zoom out)</th>
+          </tr>
+
+          <tr>
+            <th>Control +</th>
+            <th>Zoom in</th>
+          </tr>
+
+          <tr>
+            <th>Control -</th>
+            <th>Zoom out</th>
+          </tr>
+
+          <tr>
+            <th>H</th>
+            <th>Pan tool</th>
+          </tr>
+
+          <tr>
+            <th>Spacebar</th>
+            <th>Pan tool while held down</th>
+          </tr>
+
+          <tr>
+            <th>Control Z</th>
+            <th>Undo</th>
+          </tr>
+
+          <tr>
+            <th>Control Shift Z</th>
+            <th>Redo</th>
+          </tr>
+
+          <tr>
+            <th>Enter</th>
+            <th>Play/Stop</th>
+          </tr>
+
+          <tr>
+            <th>O</th>
+            <th>Toggle onion skin</th>
+          </tr>
+
+          <tr>
+            <th>I</th>
+            <th>Color eyedropper</th>
+          </tr>
+
+          <tr>
+            <th><</th>
+            <th>Previous frame</th>
+          </tr>
+
+          <tr>
+            <th>></th>
+            <th>Next frame</th>
+          </tr>
+
+          <tr>
+            <th>Left Arrow</th>
+            <th>Previous drawing</th>
+          </tr>
+
+          <tr>
+            <th>Right Arrow</th>
+            <th>Next drawing</th>
+          </tr>
+
+          <tr>
+            <th>Control Left Arrow</th>
+            <th>Move drawing back</th>
+          </tr>
+
+          <tr>
+            <th>Control Right Arrow</th>
+            <th>Move drawing forward</th>
+          </tr>
+
+          <tr>
+            <th>F5 or +</th>
+            <th>Increase drawing duration</th>
+          </tr>
+
+          <tr>
+            <th>Shift F5 or -</th>
+            <th>Decrease drawing duration</th>
+          </tr>
+
+          <tr>
+            <th>F6</th>
+            <th>Duplicate drawing at playhead</th>
+          </tr>
+
+          <tr>
+            <th>Shift F6</th>
+            <th>Duplicate drawing after</th>
+          </tr>
+
+          <tr>
+            <th>Control F6</th>
+            <th>Duplicate drawing halfway</th>
+          </tr>
+
+          <tr>
+            <th>F7</th>
+            <th>Add drawing at playhead</th>
+          </tr>
+
+          <tr>
+            <th>Shift F7</th>
+            <th>Add drawing after</th>
+          </tr>
+
+          <tr>
+            <th>Control F7</th>
+            <th>Add drawing halfway</th>
+          </tr>
+
+          <tr>
+            <th>Shift Delete</th>
+            <th>Delete drawing</th>
+          </tr>
+
+          <tr>
+            <th>[</th>
+            <th>Decrease brush size</th>
+          </tr>
+
+          <tr>
+            <th>]</th>
+            <th>Increase brush size</th>
+          </tr>
+
+          <tr>
+            <th>Control C</th>
+            <th>Copy selection</th>
+          </tr>
+
+          <tr>
+            <th>Control V</th>
+            <th>Paste selection</th>
+          </tr>
+
+          <tr>
+            <th>Control X</th>
+            <th>Cut selection</th>
+          </tr>
+
+          <tr>
+            <th>Delete</th>
+            <th>Delete selection</th>
+          </tr>
+
+          <tr>
+            <th>Control A</th>
+            <th>Select all</th>
+          </tr>
+
+          <tr>
+            <th>Control Shift A</th>
+            <th>Select none</th>
+          </tr>
+
+          <tr>
+            <th>Arrow keys</th>
+            <th>Nudge selection by 1px</th>
+          </tr>
+
+          <tr>
+            <th>Shift Arrow keys</th>
+            <th>Nudge selection by 10px</th>
+          </tr>
+
+        </table>
+
+        <br>
+
+        <h3><a name="menus2">Menus:</a></h3>
+          <ul>
+            <li><strong>File</strong></li>
+              <ul>
+                <li><strong>New</strong> - Create a new untitled project with the resolution and framerate you specify.</li>
+                <li><strong>Open</strong> - Open a project.</li>
+                <li><strong>Save</strong> - Save the current project.</li>
+                <li><strong>Save As...</strong> - Save the current project to a different filename.</li>
+                <li><strong>Revert to Saved</strong> - Discard all changes made to the project since you last saved.</li>
+                <li><strong>Recent projects</strong> - Open a project from a list of the latest projects you've opened.</li>
+                <br>
+                <li><strong>Import audio</strong> - Choose a WAV or MP3 file to import to your project. Once imported, going to a drawing will play back the section of the audio file at that point of the timeline, and playing back the animation will play it with the audio. A visual representation of the audio waveform will display on the timeline.</li>
+                  <ul>
+                    <li><strong>Remove audio</strong> - Will appear in the menu if you have already imported an audio file. Pressing it will remove that audio file from your project.</li>
+                  </ul>
+                <li><strong>Import image(s)</strong> - Choose an image file to paste into the current drawing. Will be scaled to fit the project's resolution. If you select multiple images, they will be imported as a sequence on a new layer.</li>
+                <li><strong>Import video</strong> - Choose a video file to import to your project as a new layer. Will be scaled to fit the project's resolution.</li>
+                <br>
+                <li><strong>Export MP4 video</strong> - Export an MP4 video file of your project. Includes audio if you have imported an audio file.</li>
+                <li><strong>Export GIF</strong> - Export a GIF video of your project.</li>
+                <li><strong>Export PNG sequence</strong> - Export a sequence of PNG images, one for each frame of your project. # signs in the filename you choose will be replaced by the frame number. (The number of # signs corresponds to the number of digits with leading zeroes, i.e. "####" will turn into "0001" for frame 1.) Choose whether to export images with a transparent alpha channel or with the background color of the project.</li>
+                <br>
+                <li><strong>Change framerate</strong> - Change the playback frames per second of the project.</li>
+                <li><strong>Resize or crop/expand</strong> - Change the canvas size/resolution. This is not undoable. (Tip: the app will run smoother at lower resolutions, so you may want to do your rough animation at half size and then scale up before doing cleanup and color.)</li>
+                <li><strong>Exit</strong> - Closes RoughAnimator.</li>
+              </ul>
+            <li><strong>Window</strong></li>
+              <ul>
+                <li>Hide/show panels:</li>
+                  <ul>
+                    <li>Tools</li>
+                    <li>Tool options</li>
+                    <li>Timeline</li>
+                    <li>Colors</li>
+                    <li>Preferences</li>
+                  </ul>
+                <li><strong>Default layout - right handed</strong> - Restores the default arrangement of panels, with canvas on right.</li>
+                <li><strong>Default layout - left handed</strong> - Restores the default arrangement of panels, with canvas on left.</li>
+                <br>
+                <li>Switch between open projects</li>
+              </ul>
+            <li><strong>Help</strong></li>
+              <ul>
+                <li><strong>Check for updates</strong> - Checks if there is a newer version of RoughAnimator available to download.</li>
+                <li><strong>Help</strong> - Leads to this userguide page.</li>
+                <li><strong>About RoughAnimator</strong> - Information about the program.</li>
+              </ul>
+            <li><strong>Registration</strong> - Input your license key here after purchasing to activate the full version.</li>
+          </ul>
+        
+        <br class="print">
+
+        <h3><a name="tools2">Tools:</a></h3>
+          <ul>
+            <li><strong>Modify layers</strong></li>
+              <ul>
+                <li><strong>Add empty layer</strong> - Adds a layer with one empty drawing.</li>
+                <li><strong>Add, copy timing to blank drawings</strong> - Adds a layer with the same number of drawings and same duration as the current layer, but without the content of the drawings. (Useful for coloring: you can place this new layer under the line art layer and do your coloring on it, without affecting the line art itself.)</li>
+                <li><strong>Add, copy drawings</strong> - Makes a complete duplicate of the current layer, including all drawing content.</li>
+                <li><strong>Merge down</strong> - Merges the current layer with the layer below it.</li>
+                <li><strong>Delete layer</strong> - Deletes the current layer.</li>
+              </ul>
+            <li><strong>Add drawing</strong> - Add a drawing to the timeline.</li>
+              <ul>
+                <li>Add after - Adds a blank drawing after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+                <li>Add split halfway - Adds a blank inbetween drawing, halfway from the current drawing to the next drawing on the timeline, shortening the current drawing's duration by half to keep overall timing the same.</li>
+                <li>Add split at playhead - Adds a blank inbetween drawing at the current frame on the timeline, shortening the current drawing's duration to keep overall timing the same.</li>
+                <li>Duplicate after - Adds a copy of the current drawing, after the current drawing on the timeline, of the same duration as the current drawing and pushing all later drawings down the timeline.</li>
+                <li>Duplicate split halfway - Splits the current drawing halfway along its duration, into two identical drawings of half the length each.</li>
+                <li>Duplicate split at playhead - Splits the current drawing at the current frame on the timeline, into two identical drawings.</li>
+              </ul>
+            <li><strong>Timeline</strong> - Toggle visibility of timeline panel.</li>
+            <li><strong>Tool options</strong> - Toggle visibility of the tool options panel.</li>
+            <li><img alt="Brush" src="images/user/ic_brush.png" class="ic"> - Draw lines with the brush tool. Press the brush button twice to save/load brush presets.</li>
+              <ul>
+                <li><img alt="Brush 1" src="images/user/brush1.png" class="ic"> <img alt="Brush 2" src="images/user/brush2.png" class="ic"> <img alt="Brush 3" src="images/user/brush3.png" class="ic"> - Choose the brush shape.</li>
+                  <ul>
+                    <li><strong>Add brush shape</strong> - Import an image as a brush shape. Brush shape images must be PNG format with a transparent background.</li>
+                  </ul>
+                <li><strong>Randomize rotation</strong> - Randomize the rotation of the brush image.</li>
+                <li><strong>Pressure sensitivity</strong> - Use stylus pressure (if available) to affect brush size/opacity.</li>
+                <li><strong>Brush size</strong> - The width of the brush.</li>
+                <li><strong>Opacity</strong> - Opacity of the brush.</li>
+                <li><strong>Spacing</strong> - The distance between marks in a brush stroke.</li>
+                <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+                <li><strong>Draws in front</strong> - New brush strokes will cover earlier drawing on same layer.</li>
+                <li><strong>Draws behind</strong> - New brush strokes will appear behind earlier drawing on same layer.</li>
+                <li><strong>Draws inside</strong> - Preserves transparency (good for shading).</li>
+              </ul>
+            <li><img alt="Eraser" src="images/user/ic_eraser.png" class="ic"> - Erase with the eraser tool. Press the eraser button twice to save/load eraser brush presets.</li>
+              <ul>
+                <li><strong>Erase size</strong> - The width of the eraser.</li>
+                <li><strong>Opacity</strong> - Opacity of the eraser.</li>
+                <li><strong>Spacing</strong> - The distance between marks in an eraser stroke.</li>
+                <li><strong>Smoothing</strong> - Smooths out wobbly lines.</li>
+              </ul>
+            <li><img alt="Bucket" src="images/user/ic_bucket.png" class="ic"> - Paint bucket tool fills an area inside lines with color.</li>
+              <ul>
+                <li><strong>Fill expand</strong> - Expands the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+                <li><strong>Fill blur</strong> - Blurs the area to be filled by this many pixels. (Helps avoid jagged edges.)</li>
+                <li><strong>Tolerance</strong> - The range of difference in color from the sampled point to include in the area to be filled.</li>
+                <li><strong>Sample this layer</strong> - Fill inside lines drawn on current layer.</li>
+                <li><strong>Sample this & above</strong> - Fill inside lines drawn on this layer and all layers above it.</li>
+                <li><strong>Sample all layers</strong> - Fill inside lines drawn on all layers.</li>
+                <li><strong>Fill front</strong> - New fills will cover earlier drawing on same layer.</li>
+                <li><strong>Fill behind</strong> - New fills will appear behind earlier drawing on same layer.</li>
+              </ul>
+            <li><img alt="Lasso" src="images/user/ic_lasso.png" class="ic"> - Lasso select/move tool.</li>
+              <ul>
+                <li><strong>Select all</strong> - Selects the entire drawing.</li>
+                <li><strong>Select none</strong> - De-selects anything selected.</li>
+                <li><strong>Delete</strong> - Delete the current selection.</li>
+                <li><strong>X translate</strong> - Move the current selection horizontally.</li>
+                <li><strong>Y translate</strong> - Move the current selection vertically.</li>
+                <li><strong>Rotate</strong> - Rotate the current selection.</li>
+                <li><strong>Scale</strong> - Scale the current selection.</li>
+                <li><strong>Flip horizontal</strong> - Flip the current selection horizontally.</li>
+                <li><strong>Flip vertical</strong> - Flip the current selection vertically.</li>
+                <li><strong>Copy</strong> - Copy the current selection.</li>
+                <li><strong>Paste</strong> - Paste the last copied selection.</li>
+              </ul>
+            <li><img alt="Zoom" src="images/user/ic_zoom.png" class="ic"> - Zoom tool. Click in canvas to zoom in, hold Option key and click to zoom out.</li>
+            <li><img alt="Hand" src="images/user/ic_hand.png" class="ic"> - Pan tool. Click and drag in canvas to pan around the canvas.</li>
+            <li><img alt="Undo" src="images/user/ic_action_undo.png" class="ic"> - Undo the last action.</li>
+            <li><img alt="Redo" src="images/user/ic_action_redo.png" class="ic"> - Redo undone actions.</li>
+            <li><img alt="Play" src="images/user/ic_action_play.png" class="ic"> - Play back the animation.</li>
+            <li><img alt="Previous" src="images/user/ic_previous.png" class="ic"> - Go to the previous drawing on the timeline.</li>
+            <li><img alt="Frame Flip" src="images/user/ic_frameflip.png" width="9px"> - Drag up/down to scrub along the timeline.</li>
+            <li><img alt="Next" src="images/user/ic_next.png" class="ic"> - Go to the next drawing on the timeline.</li>
+            <br>
+            <li><strong>Onion skin</strong> - Onion skinning, shows you previous/next drawings overlayed on the current drawing.</li>
+              <ul>
+                <li><strong>Onion skin range</strong> - Use these sliders to control how many drawings before/after the current drawing to show when onion skinning is turned on.</li>
+              </ul>
+          </ul>
+        
+        <br class="print">
+
+        <h3><a name="timeline2">Timeline:</a></h3>
+        <p>Each drawing is represented by a blue button on the timeline. Click any one to go to that drawing - or, drag along the top bar of the timeline to scrub through the drawings.</p>
+          <ul>
+            <li><strong>Drawing duration</strong> - How many frames the current drawing will remain on screen when played back.</li>
+              <ul>
+                <li><img alt="Independent" src="images/user/independent.gif" width="45px" style="border: none;"> <strong>Independent</strong> - Duration slider affects only current layer.</li>
+                <li><img alt="Sync layers" src="images/user/sync_layers.gif" width="45px" style="border: none;"> <strong>Sync layers</strong> - Duration slider affects all layers together. Deleting a drawing will expand the previous drawing's duration to keep overall timing the same.</li>
+                <li><img alt="Maintain overall duration" src="images/user/maintain_overall_duration.gif" width="45px" style="border: none;"> <strong>Maintain overall duration</strong> - The next drawing's duration will get shorter as the current drawing's duration gets longer and vice versa, to keep overall timing the same. Deleting a drawing will expand the next drawing's duration to keep overall timing the same.</li>
+              </ul>
+            <li><strong>Drawing label</strong> - Give the current drawing a label, which will be displayed on its button in the timeline. (Useful for organization.)</li>
+            <li><strong>Delete drawing</strong> - Deletes the current drawing.</li>
+            <li><strong>Make cycle</strong> - Converts the current drawing into a loop of the previous X number of drawings on the timeline that you choose. Any changes to those drawings will be reflected automatically in the repeated cycle of them. The cycle will appear green on the timeline, or red if it cannot work (either you are trying to cycle more drawings than exist, or you are trying to cycle a cycle).</li>
+            <li><img alt="Move Back" src="images/user/ic_moveback.png" width="30px"> - Swaps the current drawing with the previous drawing on the timeline.</li>
+            <li><img alt="Move Forward" src="images/user/ic_moveforward.png" width="30px"> - Swaps the current drawing with the next drawing on the timeline.</li>
+            <li><strong>Playback range</strong> - Adjust these sliders to play only part of the animation when previewing. You can also choose when exporting to export only the playback range.</li>
+            <li><strong>Edit multiple</strong> - Select multiple drawings in a range of frames on the timeline and edit them all at once.</li>
+          </ul>
+
+        <br class="print">
+
+        <h3><a name="preferences2">Preferences:</a></h3>
+          <ul>
+            <li><strong>Timeline horizontal zoom</strong> - Adjust how wide each frame will appear on the timeline.</li>
+            <li><strong>Allow forward button to add drawing</strong> - If enabled, pressing forward button while at the end of the timeline will add a new drawing after.</li>
+            <li><strong>Onion skin opacity</strong> - Adjust the opacity level that onion skinned drawings will display at.</li>
+            <li><strong>Onion skin tint</strong> - Tint onion skinned drawings with different colors to more easily differentiate between the previous and following drawings.</li>
+            <li><strong>Preview resolution, current layer</strong> - Set to lower display quality if drawing lags.</li>
+            <li><strong>Preview resolution, other layers</strong> - Set to lower display quality if scrubbing/playback lags.</li>
+            <li><strong>Allow drawing with finger touches</strong> - Enable or disable touch screen input.</li>
+          </ul>
+      </div>
+
+    </div>
+
+
+<footer>
+  &copy; Jacob Kafka 2020 | <a>Terms & Conditions</a> | <a>Privacy Policy</a>
+  <h5>This website is a student project for ART765 Graduate Design for the WWW at Towson University with Prof. Bridget Z. Sullivan.
+    <br>Return to <a href="../index.html">Graduate Design Site</a>.
+  </h5>
+
+</footer>
+
+<script src="js/main.js"></script>
+	    
+</body>
+</html>

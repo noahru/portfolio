@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/icon.png">
+<title>Import Projects | RoughAnimator</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h3 {text-align: left; margin-top: 30px; margin-bottom: -10px;}
+  a {text-decoration: underline; cursor: pointer;}
+</style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><b>RoughAnimator</b></a>
+        <div class="dropdown">
+          <button class="dropbtn" style="cursor: pointer;">Support 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="user.html">User Guides</a>
+            <a href="import.html">Import Projects</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn" style="cursor: pointer;">Community 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="featured.html">Featured</a>
+            <a href="tutorials.html">Tutorials</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1>Import Projects</h1>
+
+    <div class="tab">
+      
+      <h2>
+      <button class="tablinks" onclick="openPage(event, 'flash/animate')" id="defaultOpen">Adobe Flash/Animate</button>
+      <button class="tablinks" onclick="openPage(event, 'ae')">Adobe After Effects</button>
+      <button class="tablinks" onclick="openPage(event, 'tbh')">Toon Boom Harmony</button>
+      </h2>
+
+      <div id="flash/animate" class="tabcontent">
+
+        <h3>How to import a RoughAnimator project to Adobe Flash/Animate:</h3>
+        <ol>
+          <li>If you need to transfer the project from your mobile device to your computer:</li>
+            <ul>
+              <li>On <em>iOS</em>: Projects are in the RoughAnimator app's documents folder, accessible through iTunes on your desktop.</li>
+              <li>On <em>Android</em>: Projects are in a "RoughAnimator" folder in your Android device's external storage.</li>
+            </ul>
+          <li>Download <a>this Flash extension</a> and install it. <br>For Animate CC, you can use <a>this tool</a> to install extensions.</li>
+          <li>Run the extension from the Commands menu in Flash.</li>
+            <img alt="Commands Menu" src="images/import/commandsmenu.png" class="image fifty">
+          <li>Select the "data.txt" file inside your project folder.</li>
+            <img alt="Select Folder" src="images/import/selectfolder-1.2.0.png" class="image sixty">
+            <br>
+            (On Mac, if the RoughAnimator project appears as a single file and is grayed out, changing the extension will make Animate recognize it as a folder so you can open it. Just take the "a" off the end so it's ".r" and then you can change it back to ".ra" after this is finished.)
+
+          <li>Choose whether to convert the bitmap images to vector shapes.</li>
+            <img alt="Trace Bitmaps" src="images/import/tracebitmaps-1.0.2.png" class="image forty">
+          <li>Wait a bit while Flash imports the images, and then... ta da!</li>
+            <img alt="Imported" src="images/import/tada-small-1.0.2.png" class="image sixty">
+         </ol>
+         <br>
+         <hr style="margin-top: 20px;">
+         <br>
+         <h3>How to export from Adobe Flash/Animate to a RoughAnimator project:</h3>
+         <ul>
+           <li><em>This will only export the keyframes on the main stage - any additional animation inside symbols during a held frame will be lost. Tweens are converted to keyframes.</em></li>
+           <li><em>If there is a layer that contains only an audio file, the audio will be included in the export.</em></li>
+         </ul>
+
+         <ol>
+           <li>Download <a>this Flash extension</a> and install it. <br>For Animate CC, you can use <a>this tool</a> to install extensions.</li>
+           <li>With your Flash project open, run the extension from the Commands menu in Flash.</li>
+            <img alt="Commands Menu 2" src="images/import/commandsmenu2.png" class="image sixty">
+           <li>Choose where to save the exported RoughAnimator project.</li>
+            <img alt="Flash Export" src="images/import/flashexport-savedialog.png" class="image forty">
+           <li>Make sure that the width/height matches your project, and that "Full Document Size" and "24 bit with alpha channel" (in Animate CC, "32 bit") are selected.</li>
+            <img alt="Export PNG" src="images/import/exportpng-dialog.png" class="image forty">
+           <li>Wait for the export to finish.</li>
+           <li>If you need to transfer the newly created project to your mobile device:</li>
+            <ul>
+              <li>On <em>iOS</em>: Projects are in the RoughAnimator app's documents folder, accessible through iTunes on your desktop.</li>
+              <li>On <em>Android</em>: Projects are in a "RoughAnimator" folder in your Android device's external storage.</li>
+            </ul>
+           <li>Ta da!</li>
+            <img alt="Flash Exported" src="images/import/flashexported-screenshot.png" class="image sixty imgprint">
+         </ol>
+      
+      </div>
+
+      <div id="ae" class="tabcontent">
+
+        <h3>How to import a RoughAnimator project to After Effects:</h3>
+        <ol>
+          <li>If you need to transfer the project from your mobile device to your computer:</li>
+            <ul>
+              <li>On iOS: Projects are in the RoughAnimator app's documents folder, accessible through iTunes on your desktop.</li>
+              <li>On Android: Projects are in a "RoughAnimator" folder in your Android device's external storage.</li>
+            </ul>
+          <li>Download <a>this After Effects script</a> (right click & save as) and place it in your After Effects scripts folder.</li>
+            <img alt="After Effects - Scripts Folder" src="images/import/ae-scriptsfolder.png" class="image sixty">
+          <li>Run the script from the File > Scripts menu in After Effects.</li>
+            <img alt="After Effects - Scripts Menu" src="images/import/ae-scriptsmenu.png" class="image fifty">
+          <li>Select the project folder; OR if you are unable to select the folder itself, select the "data.txt" file inside.</li>
+            <img alt="Select Folder" src="images/import/selectfolder-1.2.0.png" class="image sixty">
+          <li>Ta da!</li>
+            <img alt="After Effects - Ta Da" src="images/import/ae-tada.png" class="image sixty">
+        </ol>
+
+      </div>
+
+      <div id="tbh" class="tabcontent">
+
+        <h3>How to import a RoughAnimator project to Toon Boom Harmony:</h3>
+        <ol>
+          <li>If you need to transfer the project from your mobile device to your computer:</li>
+            <ul>
+              <li>On iOS: Projects are in the RoughAnimator app's documents folder, accessible through iTunes on your desktop.</li>
+              <li>On Android: Projects are in a "RoughAnimator" folder in your Android device's external storage.</li>
+            </ul>
+          <li>Download <a>this Harmony script</a> (right click & save as) and import it in Harmony's Script Editor window.</li>
+            <img alt="Harmony Import Script" src="images/import/harmony-importscript.png" class="image sixty">
+          <li>Create a new scene with the same size/framerate as your RoughAnimator project.</li>
+            <img alt="Harmony Create Scene" src="images/import/harmony-createscene.png" class="image forty">
+          <li>Run the script.</li>
+            <img alt="Harmony Run Script" src="images/import/harmony-run1.png" class="image forty">
+            <br>
+            <img alt="Harmony Run Script 2" src="images/import/harmony-run2.png" class="image fifty">
+          <li>Select the project folder; OR if you are unable to select the folder itself, select the "data.txt" file inside.</li>
+            <img alt="Select Folder" src="images/import/selectfolder-1.2.0.png" class="image sixty">
+          <li>Wait a bit while Harmony imports the images, and then... ta da!</li>
+            <img alt="Harmony Ta Da" src="images/import/harmony-tada.png" class="image sixty imgprint">
+        </ol>
+      </div>
+
+    </div>
+
+
+<footer>
+  &copy; Jacob Kafka 2020 | <a>Terms & Conditions</a> | <a>Privacy Policy</a>
+  <h5>This website is a student project for ART765 Graduate Design for the WWW at Towson University with Prof. Bridget Z. Sullivan.
+    <br>Return to <a href="../index.html">Graduate Design Site</a>.
+  </h5>
+
+</footer>
+
+<script src="js/main.js"></script>
+	    
+</body>
+</html>
