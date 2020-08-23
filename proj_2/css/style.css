@@ -12,7 +12,7 @@ h4 {text-align: center; font-weight: 400;}
 h6 {text-align: center; margin-bottom: 50px;}
 
 /*Navigation*/
-.topnav {overflow: hidden;}
+.topnav {overflow: hidden; padding: 10px 10px 10px 30px;}
 
 .topnav .icon {display: none;}
 
@@ -47,6 +47,8 @@ h6 {text-align: center; margin-bottom: 50px;}
     text-align: left;
 }
 
+#nav-right {float: right; margin-top: 30px;}
+
 .topnav a:hover, .dropdown:hover {
     color: darkcyan;
 }
@@ -77,7 +79,6 @@ h6 {text-align: center; margin-bottom: 50px;}
 /*Video*/
 iframe {border: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
-
 /*Columns*/
 .row:after {
     content: "";
@@ -86,10 +87,12 @@ iframe {border: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 r
 }
 
 .column {float: left;}
-.column.two {width: 50%; padding: 50px;}
+.column.forty {width: 40%; padding: 50px 50px 0;}
+.column.sixty {width: 60%; padding: 50px 50px 0;}
 .column.three {width: 33.33%;}
+.column.three-ms {width: 33.33%;}
 
-/*Button*/
+/*Buttons*/
 button {
     background: cadetblue;
     color: white;
@@ -106,14 +109,12 @@ button:hover {
     background: teal;
 }
 
-
 /*Footer*/
-footer {margin-top: -5px; padding-top: 50px; margin-bottom: -18px; padding-bottom: 3px; background-color: #b8c4c8;}
+footer {margin-top: -5px; margin-bottom: -18px; padding: 50px 50px 3px; background-color: #b2d8d8;}
 footer a:hover {text-decoration: underline;}
 .address {margin-left: 20%; text-align: left;}
 
 /*Ministries*/
-
 /*Image Overlay*/
 .container {
     position: relative;
@@ -155,36 +156,46 @@ footer a:hover {text-decoration: underline;}
     text-align: center;
 }
 
+/*College*/
+h4 img {width: 40%; padding: 50px 25px 20px;}
 
 
 /*Responsive*/
-@media screen and (max-width: 800px){
-    .column.two {width: 100%;}
-    .column.three {width: 100%;}
-    iframe {width: 100%;}
-    span {display: none;}
-
-    .overlay {opacity: .7;}
+@media screen and (max-width:1024px) {
+    /*College Page*/
+    .background.college h1 {margin: 100px 50px;}
 
     /*Footer*/
-    .address {margin: 0; text-align: center;}
+    .address {margin-left: 10%;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    /*Ministries Page*/
+    .overlay {opacity: 1; background: rgba(0, 0, 0, 0.3); color: white; text-shadow: 1px 1px black; font-weight: 700;}
+    .container:hover .overlay {opacity: 0;}
+}
 
+@media screen and (max-width: 768px) {
     /*Navigation*/
+    .topnav {padding-left: 10px;}
+    
     .topnav a:not(:first-child), .dropdown a {
         display: none;
     }
     .topnav a.icon {
         float: right;
         display: block;
+        font-size: 30px;
+        color: #2BB3B0;
+        margin-top: 15px;
     }
+    .topnav a.icon:hover {color: darkcyan;}
+
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 10px;
     }
     .topnav.responsive a {
         float: none;
@@ -198,5 +209,40 @@ footer a:hover {text-decoration: underline;}
         width: 100%;
         text-align: left;
     }
+    #nav-right {float: left}
 
+    /*Columns*/
+    .column.forty {width: 100%;}
+    .column.sixty {width: 100%; padding-top: 25px;}
+    .column.three {width: 100%;}
+
+    iframe {width: 100%;}
+    span {display: none;}
+
+    /*College Page*/
+    .background.college h1 {text-shadow: 2px 2px black; margin: 100px 50px; font-size: 3em;}
+
+    /*Footer*/
+    footer {padding-top: 25px;}
+    .address {margin-left: 0; text-align: center;}
+}
+
+@media screen and (max-width: 600px) {
+    iframe {height: 200px;}
+
+    /*Ministries Page*/
+    .column.three-ms {width: 100%;}
+    .overlay {font-size: 1.8em;}
+
+    /*College Page*/
+    .background.college h1 {text-shadow: 1px 1px black; margin: 50px 50px; font-size: 2em;}
+    h2 {font-size: 1.2em;}
+    h4 img {width: 100%; padding: 10px 50px 20px;}
+}
+
+@media screen and (max-width: 480px) {
+    iframe {height: 150px;}
+
+    /*College Page*/
+    .background.college h1 {margin: 25px 25px; font-weight: 500;}
 }
