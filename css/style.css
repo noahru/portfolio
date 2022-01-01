@@ -109,4 +109,5 @@ footer {font-size: .8em; text-align: center; margin-bottom: 10px; color: #003366
     p {display: none;}
 
     a.btn {font-size: .5em;}
+    a.btn.mv {font-size: .4em;}
 }
