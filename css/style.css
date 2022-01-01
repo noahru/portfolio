@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+/*Layout*/
+* {box-sizing: border-box;}
+body {font-family: 'Open Sans', sans-serif; margin: 0; background-color: #e0ffff;} 
+
+section {padding-bottom: 25px;}
+.footer {margin: 0 7%;}
+
+h1 {margin: 0; padding-top: 37.5px; text-align: center;}
+h2 {font-size: 1.5em; padding-top: 12.5px;}
+h3 {font-size: 1.5em; margin: 0;}
+a {text-decoration: none;}
+
+.bannersmall {display: none;}
+
+/*Center Images*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.center.fifty {width: 50%;}
+
+/*Columns*/
+.column {float: left;}
+
+.column.third {width: 33%; padding: 25px 50px 25px;}
+.column.two-third {width: 67%; padding: 25px 50px 25px;}
+
+.column.two {width: 50%; padding: 0;}
+.column.three {width: 33.33%; padding: 0 50px 0;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Profile*/
+.profile {
+    margin: 50px auto;
+    width: 50%;
+    color: #003366;
+}
+
+a.btn {
+    font-size: .7em;
+    font-weight: normal;
+    background-color: #339999;
+    color: whitesmoke;
+    border-radius: 50px;
+    padding: 10px 15px;
+    transition: background-color .4s;
+}
+a.btn:hover {background-color: #66cc99}
+
+/*Site Buttons*/
+a.btn.ra {
+    background-color: #3399cc;
+    padding: 10px 30px;
+}
+a.btn.ra:hover {background-color: #006699}
+
+a.btn.mv {
+    font-size: .6em;
+    background-color: #2BB3B0;
+    padding: 10px 30px;
+}
+a.btn.mv:hover {background-color: #008B8B}
+
+.mvbuttons {display: none;}
+
+/*Footer*/
+footer {font-size: .8em; text-align: center; margin-bottom: 10px; color: #003366;}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    /*Layout*/
+    span {display: none;}
+    section {padding-left: 50px; padding-right: 50px;}
+    footer {text-align: left;}
+    
+    h2 {text-align: center; padding-top: 0; font-size: 1.25em;}
+    h3 {text-align: center;}
+    p {text-align: center;}
+
+    .banner {display: none;}
+    .bannersmall {display: block;}
+
+    .mvbuttons {display: block;}
+
+    /*Columns*/
+    .column.third {width: 100%; padding: 12.5px 0;}
+    .column.two-third {width: 100%; padding: 0;}
+
+    .column.two {width: 100%;}    
+    .column.three {width: 100%; padding: 0;}
+
+    .center.fifty {width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+    section {padding-left: 37.5px; padding-right: 37.5px;}
+    p {display: none;}
+
+    a.btn {font-size: .5em;}
+}
